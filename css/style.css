@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;700&display=swap");
 /* Base */
-:root {
-  --clr-primary: #ff8c00;
-}
 
 *,
 *::after,
@@ -18,6 +15,11 @@ html {
 }
 
 body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--white);
+    color: var(--soft-black);
   width: 100%;
   min-height: 100vh;
   background: radial-gradient(#d55906, #071a1a);
@@ -472,11 +474,11 @@ body {
 }
 
 .secondary {
-  color: #333;
+  color: #f6f4f2;
 }
 
 .tertiary {
-  color: #666;
+  color: #0b0701;
 }
 
 /* Карточки тарифных планов */
@@ -539,4 +541,135 @@ body {
 
 .footer p {
   margin: 0;
+}
+
+/* Style for all images */
+img {
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+    .heading {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #ff914d; /* Adjust color as needed */
+  }
+  
+  /* Style for gallery container */
+  .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px; /* Space between images */
+      padding-top: 20px; /* Space between heading and images */
+  }
+  
+  .menus {
+    width: 100%;
+    /* background: linear-gradient(to right, #0e0e0e 70%, #142d2a); */
+    padding: 12px 0;
+  }
+  
+  .menus .container {
+    justify-content: space-between;
+  }
+
+  :root {
+    --clr-primary: #ff8c00;
+    --clr-secondary: #ff914d;
+    --clr-background: radial-gradient(#d55906, #071a1a);
+    --clr-text-light: #edbb0a;
+    --clr-text-dark: #000;
+    --font-size-large: 70px;
+    --font-size-medium: 25px;
+      --soft-orange: #ff8c42;
+      --soft-black: #333333;
+      --white: #ffffff;
+    
+  }
+
+  .more-info {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    color: #333;
+    border-radius: 5px;
+  }
+  
+  .more-info-btn {
+    margin-top: 10px;
+    background-color: #ff914d;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .more-info-btn:hover {
+    background-color: #ff7300;
+  }
+
+  /* Slider container styling */
+  .section h2.primary {
+    color: var(--soft-orange);
+    font-size: 2rem;
+  }
+  
+  /* Pricing Section */
+  .slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slider-wrapper {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+  
+  .slider {
+    display: flex;
+    gap: 1rem; /* Space between cards */
+  }
+  
+  .pricing-card {
+    min-width: 250px;
+    flex: 0 0 auto; /* Prevent the cards from shrinking */
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+/* Arrow button styling */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
 }
