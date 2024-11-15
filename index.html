@@ -49,6 +49,101 @@
     </header>
     <!-- End Header -->
 
+    <div class="slider-container">
+      <!-- <button class="prev" onclick="slide(-1)">&#10094;</button> Left Arrow -->
+      <div class="slider">
+        <div class="pricing-card">
+          <!-- Basic Plan -->
+          <h3 class="secondary mb">Базовый План</h3>
+          <p class="price">550m / месяц</p>
+          <ul class="features">
+            <li>Месяц 3 раза в неделю с инструктором</li>
+            <li>Основные тренажеры</li>
+          </ul>
+          <a href="#discount" class="btn">Выбрать</a>
+          <button onclick="toggleInfo('basic')" class="btn more-info-btn">Подробнее</button>
+          <div id="basic-info" class="more-info" style="display: none;">
+            <p>Дополнительная информация о базовом плане...</p>
+        </div>
+      </div>
+
+      <div class="pricing-card">
+        <h3 class="secondary mb">Стандартный План</h3>
+        <p class="price">450m / месяц</p>
+        <ul class="features">
+          <li>Месяц 3 раза в неделю без инструктора</li>
+          <li>Групповые занятия</li>
+          <li>Ежемесячные консультации с тренером</li>
+        </ul>
+        <a href="#discount" class="btn">Выбрать</a>
+        <button onclick="toggleInfo('standard')" class="btn more-info-btn">Подробнее</button>
+        <div id="standard-info" class="more-info" style="display: none;">
+          <p>Дополнительная информация о стандартном плане: Групповые занятия и консультации помогают улучшить результаты.</p>
+        </div>
+      </div>
+      
+      <div class="pricing-card">
+        <h3 class="secondary mb">Стандартный План</h3>
+        <p class="price">500m / месяц</p>
+        <ul class="features">
+          <li>Месяц 4 раза в неделю без инструктора</li>
+          <li>Групповые занятия</li>
+          <li>Ежемесячные консультации с тренером</li>
+        </ul>
+        <a href="#discount" class="btn">Выбрать</a>
+        <button onclick="toggleInfo('standard')" class="btn more-info-btn">Подробнее</button>
+        <div id="standard-info" class="more-info" style="display: none;">
+          <p>Дополнительная информация о стандартном плане: Групповые занятия и консультации помогают улучшить результаты.</p>
+        </div>
+      </div>
+
+      <div class="pricing-card">
+        <h3 class="secondary mb">Стандартный План</h3>
+        <p class="price">550m / месяц</p>
+        <ul class="features">
+          <li>Месяц каждый день без инструктора</li>
+          <li>Групповые занятия</li>
+          <li>Ежемесячные консультации с тренером</li>
+        </ul>
+        <a href="#discount" class="btn">Выбрать</a>
+        <button onclick="toggleInfo('standard')" class="btn more-info-btn">Подробнее</button>
+        <div id="standard-info" class="more-info" style="display: none;">
+          <p>Дополнительная информация о стандартном плане: Групповые занятия и консультации помогают улучшить результаты.</p>
+        </div>
+      </div>
+      
+      <!-- Premium Plan -->
+      <div class="pricing-card">
+        <h3 class="secondary mb">Премиум План</h3>
+        <p class="price">750m / месяц</p>
+        <ul class="features">
+          <li>Персональный тренер</li>
+          <li>Месяц каждый день с инструктором</li>
+        </ul>
+        <a href="#discount" class="btn">Выбрать</a>
+        <button onclick="toggleInfo('premium')" class="btn more-info-btn">Подробнее</button>
+        <div id="premium-info" class="more-info" style="display: none;">
+          <p>Дополнительная информация о премиум плане: Включает доступ ко всем тренажерам и круглосуточную поддержку.</p>
+        </div>
+      </div>
+    </div>
+</div>
+
+      <!-- <button class="next" onclick="slide(1)">&#10095;</button> Right Arrow -->
+    <!-- </div> -->
+  </div>
+    
+    <script>
+      function toggleInfo(planId) {
+        const infoSection = document.getElementById(`${planId}-info`);
+        if (infoSection.style.display === 'none') {
+          infoSection.style.display = 'block';
+        } else {
+          infoSection.style.display = 'none';
+        }
+      }
+    </script>
+
     <!-- Why Us -->
     <div class="section" id="why-us">
       <div class="container flex">
@@ -168,177 +263,6 @@
       </div>
     </div>
     <!-- End Testimonial -->
-
-    <!-- Pricing Section -->
-    <div class="slider-container">
-      <button class="prev" onclick="slide(-1)">&#10094;</button> <!-- Left Arrow -->
-      <div class="slider">
-        <div class="pricing-card">
-          <!-- Basic Plan -->
-          <h3 class="secondary mb">Базовый План</h3>
-          <p class="price">550m / месяц</p>
-          <ul class="features">
-            <li>Месяц 3 раза в неделю с инструктором</li>
-            <li>Основные тренажеры</li>
-          </ul>
-          <a href="#discount" class="btn">Выбрать</a>
-          <button onclick="toggleInfo('basic')" class="btn more-info-btn">Подробнее</button>
-          <div id="basic-info" class="more-info" style="display: none;">
-            <p>Дополнительная информация о базовом плане...</p>
-        </div>
-      </div>
-
-      <div class="pricing-card">
-        <h3 class="secondary mb">Стандартный План</h3>
-        <p class="price">450m / месяц</p>
-        <ul class="features">
-          <li>Месяц 3 раза в неделю без инструктора</li>
-          <li>Групповые занятия</li>
-          <li>Ежемесячные консультации с тренером</li>
-        </ul>
-        <a href="#discount" class="btn">Выбрать</a>
-        <button onclick="toggleInfo('standard')" class="btn more-info-btn">Подробнее</button>
-        <div id="standard-info" class="more-info" style="display: none;">
-          <p>Дополнительная информация о стандартном плане: Групповые занятия и консультации помогают улучшить результаты.</p>
-        </div>
-      </div>
-      
-      <div class="pricing-card">
-        <h3 class="secondary mb">Стандартный План</h3>
-        <p class="price">500m / месяц</p>
-        <ul class="features">
-          <li>Месяц 4 раза в неделю без инструктора</li>
-          <li>Групповые занятия</li>
-          <li>Ежемесячные консультации с тренером</li>
-        </ul>
-        <a href="#discount" class="btn">Выбрать</a>
-        <button onclick="toggleInfo('standard')" class="btn more-info-btn">Подробнее</button>
-        <div id="standard-info" class="more-info" style="display: none;">
-          <p>Дополнительная информация о стандартном плане: Групповые занятия и консультации помогают улучшить результаты.</p>
-        </div>
-      </div>
-
-      <div class="pricing-card">
-        <h3 class="secondary mb">Стандартный План</h3>
-        <p class="price">550m / месяц</p>
-        <ul class="features">
-          <li>Месяц каждый день без инструктора</li>
-          <li>Групповые занятия</li>
-          <li>Ежемесячные консультации с тренером</li>
-        </ul>
-        <a href="#discount" class="btn">Выбрать</a>
-        <button onclick="toggleInfo('standard')" class="btn more-info-btn">Подробнее</button>
-        <div id="standard-info" class="more-info" style="display: none;">
-          <p>Дополнительная информация о стандартном плане: Групповые занятия и консультации помогают улучшить результаты.</p>
-        </div>
-      </div>
-      
-      <!-- Premium Plan -->
-      <div class="pricing-card">
-        <h3 class="secondary mb">Премиум План</h3>
-        <p class="price">750m / месяц</p>
-        <ul class="features">
-          <li>Персональный тренер</li>
-          <li>Месяц каждый день с инструктором</li>
-        </ul>
-        <a href="#discount" class="btn">Выбрать</a>
-        <button onclick="toggleInfo('premium')" class="btn more-info-btn">Подробнее</button>
-        <div id="premium-info" class="more-info" style="display: none;">
-          <p>Дополнительная информация о премиум плане: Включает доступ ко всем тренажерам и круглосуточную поддержку.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- <div class="pricing-card">
-      <h3 class="secondary mb">Премиум План</h3>
-      <p class="price">350m / 2недели</p>
-      <ul class="features">
-        <li>Персональный тренер</li>
-        <li>2 недели 3раза в неделю без инструктора</li>
-      </ul>
-      <a href="#discount" class="btn">Выбрать</a>
-      <button onclick="toggleInfo('premium')" class="btn more-info-btn">Подробнее</button>
-      <div id="premium-info" class="more-info" style="display: none;">
-        <p>Дополнительная информация о премиум плане: Включает доступ ко всем тренажерам и круглосуточную поддержку.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="pricing-card">
-    <h3 class="secondary mb">Премиум План</h3>
-    <p class="price">400m / 2недели</p>
-    <ul class="features">
-      <li>Персональный тренер</li>
-      <li>2 недели 3раза в неделю с инструктором</li>
-    </ul>
-    <a href="#discount" class="btn">Выбрать</a>
-    <button onclick="toggleInfo('premium')" class="btn more-info-btn">Подробнее</button>
-    <div id="premium-info" class="more-info" style="display: none;">
-      <p>Дополнительная информация о премиум плане: Включает доступ ко всем тренажерам и круглосуточную поддержку.</p>
-    </div>
-  </div>
-</div>
-
-<div class="pricing-card">
-  <h3 class="secondary mb">Премиум План</h3>
-  <p class="price">450m / 2недели</p>
-  <ul class="features">
-    <li>Персональный тренер</li>
-    <li>2 недели 4раза в недели без инструктора</li>
-  </ul>
-  <a href="#discount" class="btn">Выбрать</a>
-  <button onclick="toggleInfo('premium')" class="btn more-info-btn">Подробнее</button>
-  <div id="premium-info" class="more-info" style="display: none;">
-    <p>Дополнительная информация о премиум плане: Включает доступ ко всем тренажерам и круглосуточную поддержку.</p>
-  </div>
-</div>
-</div>
-
-<div class="pricing-card">
-  <h3 class="secondary mb">Премиум План</h3>
-  <p class="price">600m / 2недели</p>
-  <ul class="features">
-    <li>Персональный тренер</li>
-    <li>2 недели каждый день с инструктором</li>
-  </ul>
-  <a href="#discount" class="btn">Выбрать</a>
-  <button onclick="toggleInfo('premium')" class="btn more-info-btn">Подробнее</button>
-  <div id="premium-info" class="more-info" style="display: none;">
-    <p>Дополнительная информация о премиум плане: Включает доступ ко всем тренажерам и круглосуточную поддержку.</p>
-  </div>
-</div>
-</div>
-
-<div class="pricing-card">
-  <h3 class="secondary mb">Премиум План</h3>
-  <p class="price">500m / 2недели</p>
-  <ul class="features">
-    <li>Персональный тренер</li>
-    <li>2 недели каждый день без инструктора</li>
-  </ul>
-  <a href="#discount" class="btn">Выбрать</a>
-  <button onclick="toggleInfo('premium')" class="btn more-info-btn">Подробнее</button>
-  <div id="premium-info" class="more-info" style="display: none;">
-    <p>Дополнительная информация о премиум плане: Включает доступ ко всем тренажерам и круглосуточную поддержку.</p>
-  </div>
-</div> -->
-</div>
-
-      <button class="next" onclick="slide(1)">&#10095;</button> <!-- Right Arrow -->
-    </div>
-  </div>
-    
-    <script>
-      function toggleInfo(planId) {
-        const infoSection = document.getElementById(`${planId}-info`);
-        if (infoSection.style.display === 'none') {
-          infoSection.style.display = 'block';
-        } else {
-          infoSection.style.display = 'none';
-        }
-      }
-    </script>
-
 
     <!-- Discount -->
     <div class="section" id="discount">
