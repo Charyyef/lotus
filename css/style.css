@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;700&display=swap");
-/* Base */
 
+/* Base Styles */
 *,
 *::after,
 *::before {
@@ -15,11 +15,11 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: var(--white);
-    color: var(--soft-black);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--white);
+  color: var(--soft-black);
   width: 100%;
   min-height: 100vh;
   background: radial-gradient(#d55906, #071a1a);
@@ -109,16 +109,11 @@ body {
   font-weight: 700;
 }
 
-.secondary {
-  font-size: 25px;
-  font-weight: 700;
-}
-
 .tertiary {
   font-size: 15px;
 }
 
-/* Menu */
+/* Menu Styles */
 .menu {
   width: 100%;
   background: linear-gradient(to right, #0e0e0e 70%, #142d2a);
@@ -167,9 +162,7 @@ body {
   color: #fff;
 }
 
-/* End Menu */
-
-/* Buttons */
+/* Button Styles */
 .btn {
   padding: 10px 28px;
   background: var(--clr-primary);
@@ -197,9 +190,7 @@ body {
   color: #29a396;
 }
 
-/* End Buttons */
-
-/* Header */
+/* Header Styles */
 .text {
   width: 60%;
 }
@@ -220,9 +211,8 @@ body {
 .header h1 span {
   color: #29a396;
 }
-/* End Header */
 
-/* Trainers */
+/* Trainers Styles */
 #trainers {
   text-align: center;
 }
@@ -241,10 +231,7 @@ body {
   margin-bottom: 10px;
 }
 
-/* End Trainers */
-
-/* Testimonial */
-
+/* Testimonial Styles */
 #testimonial .visual img {
   width: 90%;
   display: block;
@@ -274,23 +261,20 @@ body {
 .client h2 {
   margin: 20px 0 10px 0;
 }
-/* End Testimonial */
 
-/* Discount */
+/* Discount Section */
 #discount {
   padding: 40px 0;
 }
-/* End Discount */
 
-/* Footer */
+/* Footer Styles */
 .footer {
   padding: 30px 0;
   border-top: 1px solid #fff;
   text-align: center;
 }
-/* End Footer */
 
-/* Responsive */
+/* Responsive Styles */
 @media (max-width: 768px) {
   .flex {
     flex-direction: column;
@@ -340,10 +324,6 @@ body {
     font-size: 28px;
   }
 
-  .secondary {
-    font-size: 22px;
-  }
-
   .tertiary {
     font-size: 14px;
   }
@@ -370,14 +350,6 @@ body {
     display: none;
   }
 
-  .primary {
-    font-size: 25px;
-  }
-
-  .secondary {
-    font-size: 20px;
-  }
-
   .tertiary {
     font-size: 12px;
   }
@@ -385,291 +357,106 @@ body {
   .text h1 {
     font-size: 34px;
   }
-
-  .btn,
-  .btn-2 {
-    font-size: 16px;
-  }
-  #pricing {
-    background: linear-gradient(135deg, #ff7e5f, #feb47b);
-    padding: 60px 20px;
-    text-align: center;
-  }
-  
-  #pricing h2 {
-    font-size: 36px;
-    color: #ffcc33;
-    margin-bottom: 30px;
-  }
-  
-  .pricing-cards {
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Добавляем вертикальное выравнивание */
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto; /* Центрирование контейнера */
-    flex-wrap: wrap;
-  }
-  
-  .pricing-card {
-    background-color: #ffffff;
-    color: #333;
-    padding: 30px;
-    border-radius: 15px;
-    width: 280px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .pricing-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
-  }
-  
-  .pricing-card h3 {
-    font-size: 24px;
-    font-weight: 700;
-    color: #ff7e5f;
-    margin-bottom: 15px;
-  }
-  
-  .pricing-card .price {
-    font-size: 28px;
-    color: #feb47b;
-    margin-bottom: 20px;
-  }
-  
-  .pricing-card .features {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 20px;
-    color: #666;
-  }
-  
-  .pricing-card .features li {
-    margin-bottom: 10px;
-  }
-  
-  .pricing-card .btn {
-    background-color: #ff7e5f;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 25px;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .pricing-card .btn:hover {
-    background-color: #feb47b;
-  }
-  
-}
-/* End Responsive */
-/* Стили для заголовков */
-.primary {
-  color: #ff914d;
 }
 
-.secondary {
-  color: #f6f4f2;
+/* Color Variables */
+:root {
+  --clr-primary: #ff8c00;
+  --clr-secondary: #ff914d;
+  --clr-background: radial-gradient(#d55906, #071a1a);
+  --clr-text-light: #edbb0a;
+  --clr-text-dark: #000;
+  --font-size-large: 70px;
+  --font-size-medium: 25px;
+  --soft-orange: #ff8c42;
+  --soft-black: #333333;
+  --white: #ffffff; 
 }
 
-.tertiary {
-  color: #0b0701;
+/* Image Styles */
+img {
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  transition: transform 0.3s;
 }
 
-/* Карточки тарифных планов */
-#pricing {
-  background: #fff;
-  padding: 60px 20px;
+img:hover {
+  transform: scale(1.1);
 }
 
-.pricing-cards {
+/* Pricing Section Styles */
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider {
   display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 20px;
 }
 
 .pricing-card {
-  background-color: #ffecd1;
-  color: #333;
-  padding: 30px;
-  border-radius: 15px;
+  background-color: #f7f9fc;
+  border-radius: 8px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
   width: 280px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border: 2px solid #eee;
 }
 
 .pricing-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.15);
+  border-color: #67b246;
 }
 
-.pricing-card .price {
-  font-size: 28px;
-  color: #ff914d;
+.price {
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
   margin-bottom: 20px;
+  text-align: left;
+  font-size: 14px;
+  color: #666;
 }
 
-.pricing-card .btn {
-  background-color: #ff914d;
+.features li {
+  margin-bottom: 8px;
+}
+
+.features li i {
+  color: #67b246;
+  margin-right: 8px;
+}
+
+/* Adjusting Button Styles */
+.btn {
+  background: linear-gradient(to right, #ff8c00, #ff914d);
   color: #fff;
-  padding: 10px 20px;
+  padding: 12px 24px;
   border-radius: 25px;
   font-weight: bold;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
-.pricing-card .btn:hover {
-  background-color: #333;
-  color: #ff914d;
-}
-
-/* Стили для футера */
-.footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-}
-
-.footer p {
-  margin: 0;
-}
-
-/* Style for all images */
-img {
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    margin: 10px;
-    transition: transform 0.3s;
-}
-
-img:hover {
-    transform: scale(1.1);
-}
-
-    .heading {
-      text-align: center;
-      margin-top: 20px;
-      font-size: 2rem;
-      font-weight: bold;
-      color: #ff914d; /* Adjust color as needed */
-  }
-  
-  /* Style for gallery container */
-  .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px; /* Space between images */
-      padding-top: 20px; /* Space between heading and images */
-  }
-  
-  .menus {
-    width: 100%;
-    /* background: linear-gradient(to right, #0e0e0e 70%, #142d2a); */
-    padding: 12px 0;
-  }
-  
-  .menus .container {
-    justify-content: space-between;
-  }
-
-  :root {
-    --clr-primary: #ff8c00;
-    --clr-secondary: #ff914d;
-    --clr-background: radial-gradient(#d55906, #071a1a);
-    --clr-text-light: #edbb0a;
-    --clr-text-dark: #000;
-    --font-size-large: 70px;
-    --font-size-medium: 25px;
-      --soft-orange: #ff8c42;
-      --soft-black: #333333;
-      --white: #ffffff;
-    
-  }
-
-  .more-info {
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    color: #333;
-    border-radius: 5px;
-  }
-  
-  .more-info-btn {
-    margin-top: 10px;
-    background-color: #ff914d;
-    color: #fff;
-    border: none;
-    padding: 8px 16px;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-  
-  .more-info-btn:hover {
-    background-color: #ff7300;
-  }
-
-  /* Slider container styling */
-  .section h2.primary {
-    color: var(--soft-orange);
-    font-size: 2rem;
-  }
-  
-  /* Pricing Section */
-  .slider-container {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .slider-wrapper {
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-  }
-  
-  .slider {
-    display: flex;
-    gap: 1rem; /* Space between cards */
-  }
-  
-  .pricing-card {
-    min-width: 250px;
-    flex: 0 0 auto; /* Prevent the cards from shrinking */
-    padding: 1rem;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-
-/* Arrow button styling */
-.prev, .next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 24px;
-  background: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 10;
-}
-
-.prev {
-  left: 0;
-}
-
-.next {
-  right: 0;
+.btn:hover {
+  background: linear-gradient(to right, #ff914d, #ff8c00);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05) rotate(1deg);
 }
